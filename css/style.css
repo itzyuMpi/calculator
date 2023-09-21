@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #798BF2, #8286f3, #8b7ff1, #9477ed, #9e6ee9, #a96be9, #b368e8, #be64e6, #cc66e9, #da68ec, #e76aee, #f56cf0);
+    position: relative;
+}
+
+div.wrapper>div.shape1{
+    width: 200px;
+    height: 300px;
+    background-color: #9879F0;
+    border-radius: 100% 0% 100% 0% / 100% 100% 0% 0% ;
+    box-shadow: 0px 10px 25px #9879F0;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+div.wrapper>div.shape2{
+    width: 300px;
+    height: 300px;
+    background-color: #798BF2;
+    border-radius: 78% 22% 45% 55% / 44% 31% 69% 56%  ;
+    box-shadow: 0px 10px 25px #8F7EF0;
+    position: absolute;
+    top: -100px;
+    right: 400px;
+}
+
+div.wrapper>div.shape3{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+div.wrapper>div.shape3>img{
+    width: 100%;
+    height: 100%;
+}
+
+div.wrapper>div#main{
+    width: 50%;
+    height: 65%;
+    background-color: rgba(255,255,255,.1);
+    border: 0.5px solid rgb(187, 187, 187);
+    border-radius: 15px;
+    z-index: 10;
+}
+
+div.wrapper>div#main>div#dark{
+    width: 100%;
+    height: 30px;
+}
+
+div.wrapper>div#main>div#header{
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+}
+
+div.wrapper>div#main>div#header>h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+    color: #6F1868;
+    transition: 300ms;
+}
+
+div.wrapper>div#main>div:nth-of-type(2){
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: rgba(255,255,255,.2);
+    border-radius: 0 0 15px 15px;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#input{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#input>input{
+    all: unset;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: rgba(255,255,255,.5);
+    margin: 0 20px;
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(4, 37, 100, 0.12);
+    border-radius: 2px;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#button{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#button>button{
+    all: unset;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+    color: white;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#button>button:hover{
+    box-shadow: 0px 10px 25px rgba(4, 37, 100, 0.12);
+    border-radius: 4px;
+    background-color: rgba(255,255,255,.3);
+    transform: scale(1.25);
+    transition: 300ms;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#answer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#answer>div{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#answer>div>p{
+    color: white;
+    font-size: 23px;
+    margin-right: 20px;
+}
+
+div.wrapper>div#main>div:nth-of-type(2)>div#answer>div>h2{
+    width: 120px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 0px 10px 25px rgba(4, 37, 100, 0.12);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.wrapper>div#main:hover>div#header>h1{
+    color: #462B6E;
+}
+
+div.wrapper>div#main:hover{
+    margin-bottom: 5px;
+}
+
+div.wrapper>div:nth-last-of-type(1){
+    width: 50%;
+    height: 65%;
+    position: absolute;
+}
+
+div.wrapper>div#main:hover~div:nth-last-of-type(1)>div#back{
+    width: 560px;
+    top: 20px;
+    transform: skewY(5deg);
+    perspective: 1000px;
+}
+
+div.wrapper>div:nth-last-of-type(1)>div#back{
+    width: 630px;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, #b42796, #a62a9e, #952fa6, #8234ae, #6a39b4);
+    box-shadow: rgb(24 32 79 / 25%) 0px 40px 80px, rgb(255 255 255 / 50%) 0px 0px 0px 0.5px inset;
+    border-radius: 15px;
+    position: absolute;
+    top: 15px;
+    transform: skewY(3deg);
+    transition: 500ms;
+}
